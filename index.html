@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trevor Sakwa — Mechanical Engineer / Financial Analyst</title>
+<meta name="description" content="Portfolio of Trevor Sakwa — mechanical engineering (CAD, FEA, CFD) and financial analysis (quant, Python, portfolio theory) projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-mode="mech">
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="brand">
+        <span class="brand-name">Trevor Sakwa</span>
+        <span class="brand-sub">Liverpool, UK</span>
+      </div>
+
+      <div class="mode-switch" role="group" aria-label="Choose which profile to view">
+        <span class="mode-switch-label mode-switch-label--left" data-label="mech">Mechanical</span>
+        <button class="mode-toggle" id="modeToggle" type="button" role="switch" aria-checked="false" aria-label="Toggle between mechanical engineering and finance profile">
+          <span class="mode-toggle-thumb"></span>
+        </button>
+        <span class="mode-switch-label mode-switch-label--right" data-label="fin">Finance</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-text">
+        <div class="title-block" id="titleBlock">
+          <span class="title-block-key">SHEET</span>
+          <span class="title-block-value" id="titleBlockValue">MECHANICAL</span>
+        </div>
+        <h1 class="hero-heading">
+          Mechanical engineer <span class="hero-and">&amp;</span> financial analyst.
+        </h1>
+        <p class="hero-sub">
+          Dual MSc-trained across Mechanical Engineering with Management, and Finance &amp; Investment Management —
+          currently viewing the <strong id="heroModeWord">engineering</strong> profile.
+        </p>
+      </div>
+
+      <div class="hero-visual">
+        <!-- MECHANICAL: original open-wheel race car wireframe (no team branding/livery — inspired by aero blueprint diagrams, not a reproduction of any specific car) -->
+        <svg class="hero-svg hero-svg--mech" viewBox="0 0 800 330" role="img" aria-label="Original wireframe diagram of an open-wheel race car, in the style of an aerodynamics blueprint">
+          <line x1="80" y1="282" x2="600" y2="282" class="mech-dashed" />
+
+          <!-- body -->
+          <path class="mech-body" d="M100,255 C120,235 135,225 140,220 C160,205 180,196 200,190 C220,182 235,175 250,165 C265,155 285,152 300,170 C320,172 340,173 370,175 C395,177 420,178 440,180 C460,183 475,186 490,190 C510,194 530,197 570,200 L570,230 C545,232 520,236 500,240 C460,248 420,252 370,254 C330,255 290,254 250,252 C225,250 210,252 200,258 C180,255 160,252 140,248 C125,244 112,248 100,255 Z" />
+          <path class="mech-body" d="M238,166 Q258,118 280,120 Q302,118 312,166" />
+
+          <!-- front wing -->
+          <line x1="82" y1="270" x2="140" y2="270" class="mech-wing" />
+          <line x1="82" y1="276" x2="140" y2="276" class="mech-wing" />
+          <line x1="82" y1="258" x2="82" y2="282" class="mech-wing" />
+
+          <!-- rear wing -->
+          <line x1="570" y1="175" x2="630" y2="175" class="mech-wing" />
+          <line x1="570" y1="183" x2="630" y2="183" class="mech-wing" />
+          <line x1="570" y1="165" x2="570" y2="195" class="mech-wing" />
+          <line x1="630" y1="165" x2="630" y2="195" class="mech-wing" />
+          <line x1="555" y1="200" x2="585" y2="183" class="mech-wing" />
+          <line x1="555" y1="210" x2="585" y2="195" class="mech-wing" />
+
+          <!-- sidepod duct -->
+          <path class="mech-outline" d="M330,210 L362,213 L358,236 L334,234 Z" />
+
+          <!-- front wheel -->
+          <g class="mech-outline">
+            <circle cx="180" cy="250" r="32" />
+            <circle cx="180" cy="250" r="18" />
+          </g>
+          <g class="mech-teeth">
+            <line x1="186.0" y1="250.0" x2="206.0" y2="250.0" /><line x1="181.9" y1="255.7" x2="188.0" y2="274.7" /><line x1="175.1" y1="253.5" x2="159.0" y2="265.3" /><line x1="175.1" y1="246.5" x2="159.0" y2="234.7" /><line x1="181.9" y1="244.3" x2="188.0" y2="225.3" />
+          </g>
+
+          <!-- rear wheel -->
+          <g class="mech-outline">
+            <circle cx="510" cy="242" r="40" />
+            <circle cx="510" cy="242" r="22" />
+          </g>
+          <g class="mech-teeth">
+            <line x1="518.0" y1="242.0" x2="544.0" y2="242.0" /><line x1="514.0" y1="248.9" x2="527.0" y2="271.4" /><line x1="506.0" y1="248.9" x2="493.0" y2="271.4" /><line x1="502.0" y1="242.0" x2="476.0" y2="242.0" /><line x1="506.0" y1="235.1" x2="493.0" y2="212.6" /><line x1="514.0" y1="235.1" x2="527.0" y2="212.6" />
+          </g>
+
+          <!-- diffuser -->
+          <g class="mech-teeth">
+            <line x1="500" y1="282" x2="510" y2="266" /><line x1="518" y1="282" x2="528" y2="266" /><line x1="536" y1="282" x2="546" y2="266" /><line x1="554" y1="282" x2="564" y2="266" /><line x1="572" y1="282" x2="582" y2="266" />
+          </g>
+
+          <!-- wheelbase dimension -->
+          <line x1="180" y1="300" x2="510" y2="300" class="mech-dim" />
+          <line x1="180" y1="294" x2="180" y2="306" class="mech-dim" />
+          <line x1="510" y1="294" x2="510" y2="306" class="mech-dim" />
+          <text x="345" y="320" class="mech-label" text-anchor="middle">Wheelbase</text>
+
+          <!-- callouts -->
+          <line x1="82" y1="273" x2="20" y2="235" class="mech-leader" />
+          <text x="12" y="228" class="mech-label" text-anchor="middle">Front wing</text>
+
+          <line x1="300" y1="135" x2="650" y2="85" class="mech-leader" />
+          <text x="654" y="88" class="mech-label">Halo</text>
+
+          <line x1="358" y1="220" x2="650" y2="178" class="mech-leader" />
+          <text x="654" y="181" class="mech-label">Sidepod duct</text>
+
+          <line x1="605" y1="178" x2="670" y2="138" class="mech-leader" />
+          <text x="674" y="141" class="mech-label">Rear wing</text>
+
+          <line x1="545" y1="272" x2="650" y2="250" class="mech-leader" />
+          <text x="654" y="253" class="mech-label">Diffuser</text>
+        </svg>
+
+        <!-- FINANCE: mini terminal / market-data wall -->
+        <svg class="hero-svg hero-svg--fin" viewBox="0 0 400 400" role="img" aria-label="Illustrative market data terminal with sample charts">
+          <rect x="20" y="20" width="170" height="170" rx="4" class="fin-panel" />
+          <rect x="210" y="20" width="170" height="170" rx="4" class="fin-panel" />
+          <rect x="20" y="210" width="170" height="170" rx="4" class="fin-panel" />
+          <rect x="210" y="210" width="170" height="170" rx="4" class="fin-panel" />
+
+          <text x="34" y="42" class="fin-label">SIM A</text>
+          <text x="34" y="180" class="fin-value fin-value--up">+2.4%</text>
+          <g transform="translate(34, 80)">
+            <polyline points="0.0,33.6 13.6,34.1 27.3,37.8 40.9,37.5 54.5,37.6 68.2,38.4 81.8,35.6 95.5,35.7 109.1,36.8 122.7,39.4 136.4,35.9 150.0,34.1" class="fin-line fin-line--green" />
+          </g>
+
+          <text x="224" y="42" class="fin-label">SIM B</text>
+          <text x="224" y="180" class="fin-value fin-value--down">&minus;1.1%</text>
+          <g transform="translate(224, 80)">
+            <polyline points="0.0,29.9 13.6,25.3 27.3,19.2 40.9,25.5 54.5,21.5 68.2,16.6 81.8,18.6 95.5,16.6 109.1,21.6 122.7,18.2 136.4,24.0 150.0,21.7" class="fin-line fin-line--amber" />
+          </g>
+
+          <text x="34" y="232" class="fin-label">VOL</text>
+          <g transform="translate(34, 270)" class="fin-bars">
+            <rect x="0.0" y="14.1" width="12" height="29.9" rx="1.5" /><rect x="17.2" y="10.3" width="12" height="33.7" rx="1.5" /><rect x="34.5" y="8.6" width="12" height="35.4" rx="1.5" /><rect x="51.8" y="3.8" width="12" height="40.2" rx="1.5" /><rect x="69.0" y="10.3" width="12" height="33.7" rx="1.5" /><rect x="86.2" y="4.5" width="12" height="39.5" rx="1.5" /><rect x="103.5" y="33.1" width="12" height="10.9" rx="1.5" /><rect x="120.8" y="19.1" width="12" height="24.9" rx="1.5" /><rect x="138.0" y="3.8" width="12" height="40.2" rx="1.5" />
+          </g>
+
+          <text x="224" y="232" class="fin-label">RISK</text>
+          <g transform="translate(224, 270)" class="fin-scatter">
+            <circle cx="69.9" cy="18.7" r="2.4" /><circle cx="31.7" cy="29.0" r="2.8" /><circle cx="75.4" cy="36.5" r="2.4" /><circle cx="52.1" cy="37.8" r="3.2" /><circle cx="11.6" cy="18.9" r="3.2" /><circle cx="136.6" cy="38.3" r="2.8" /><circle cx="27.7" cy="14.1" r="2.4" /><circle cx="24.3" cy="35.6" r="3.2" /><circle cx="14.7" cy="29.4" r="3.2" /><circle cx="128.4" cy="37.2" r="2.4" /><circle cx="99.0" cy="30.7" r="2.8" />
+          </g>
+
+          <text x="20" y="398" class="fin-footnote">Illustrative simulated data — not live market feeds</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section wrap" id="about">
+      <div class="eyebrow">About</div>
+      <p class="bio" id="bioText"></p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section wrap" id="skills">
+      <div class="eyebrow">Skills</div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section wrap" id="projects">
+      <div class="eyebrow">Projects</div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section wrap" id="contact">
+      <div class="eyebrow">Contact</div>
+      <div class="contact-row">
+        <a href="mailto:trevorsakwa@gmail.com" class="contact-link">trevorsakwa@gmail.com</a>
+        <a href="https://www.linkedin.com/in/trevor-sakwa-302a13204" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+        <a href="assets/resume/trevor-sakwa-mechanical-cv.pdf" download class="contact-link resume-link" id="resumeLink">Download CV (mechanical)</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer wrap">
+    <span>&copy; 2026 Trevor Sakwa</span>
+    <span class="footer-mono">Built as a static site — GitHub Pages</span>
+  </footer>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/content-data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
