@@ -54,7 +54,7 @@ const PROJECTS = [
     mode: "mech",
     title: "Reverse Engineering — Automatic Air Freshener Assembly",
     tag: "CAD + reverse engineering",
-    summary: "Fully reverse engineered a Glade Sense & Spray automatic air freshener into a complete PTC Creo Parametric assembly — dismantling the unit, measuring every component by hand, and remodelling the motion-sensor circuit, motor, and three-stage reduction gear train (64T to 56T to a 17T sector gear) that converts rotation into the linear nozzle motion which triggers the spray. Delivered as a full working assembly with a bill of materials and 2D manufacturing drawings.",
+    summary: "Fully reverse engineered a Glade Sense & Spray automatic air freshener into a complete PTC Creo Parametric assembly — dismantling the unit, measuring every component by hand, and remodelling the motion-sensor circuit, motor, and reduction gear train (a 12T motor gear driving 56T and 64T gears down to a 17T sector gear) that converts rotation into the linear nozzle motion which triggers the spray. Delivered as a full working assembly with a bill of materials and 2D manufacturing drawings.",
     tools: ["PTC Creo Parametric", "Reverse engineering", "GD&T", "Technical drawings"],
     thumb: "assets/projects/air-freshener-reverse-engineering/thumb.jpg",
     media: [
@@ -63,7 +63,10 @@ const PROJECTS = [
       { type: "image", src: "assets/projects/air-freshener-reverse-engineering/gear-component.jpg" },
       { type: "image", src: "assets/projects/air-freshener-reverse-engineering/assembly-render.jpg" }
     ],
-    links: { report: "#", files: "#" }
+    links: {
+      report: "assets/projects/air-freshener-reverse-engineering/reverse-engineering-report.pdf",
+      files: "assets/projects/air-freshener-reverse-engineering/cad-files.zip"
+    }
   },
   {
     mode: "mech",
